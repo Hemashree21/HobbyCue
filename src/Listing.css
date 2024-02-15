@@ -82,3 +82,34 @@
     margin: 2rem;
     padding-top: 2rem;
 }
+
+.list-resp {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 360px) {
+    .listings {    
+        height: 100%;
+        width: 100%;
+    }
+
+    .list-resp {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0 !important;
+    }
+
+    .people-listing, .place-listing, .product-listing, .program-listing {
+        width: 312px;
+        height: 142px;
+    }
+
+    .listing-text {
+        font-size: 18px;
+    }
+
+    .listing-para {
+        font-size: 12px;
+    }
+}

@@ -10,18 +10,27 @@ import pplhover from './assets/people-hover.png';
 import placehover from './assets/place-hover.png';
 import producthover from './assets/product-hover.png';
 import programhover from './assets/program-hover.png';
+import top from './assets/top.png';
 
 const Listing = () => {
     const [pplHovered, setPplHovered] = useState(false);
     const [placeHovered, setPlaceHovered] = useState(false);
     const [programHovered, setProgramHovered] = useState(false);
     const [productHovered, setProductHovered] = useState(false);
+
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    };
+
   return (
     <>
     <Header/>
     <div className='listings'>
         <span className='add-listing'><img src={Add} alt="" style={{marginRight: '1rem'}}/>Add Your Listing</span>
-          <div style={{display: 'flex', justifyContent: 'space-evenly'}}>
+          <div className='list-resp'>
           <div className='people-listing' onMouseOver={()=>setPplHovered(true)} onMouseLeave={()=>setPplHovered(false)}>
             <div style={{display: 'flex', alignItems: 'center', gap: '1rem'}}>
             <img src={pplHovered ? pplhover : People} alt="" style={{marginLeft: '1rem', marginTop: '1rem'}}/>
@@ -37,7 +46,7 @@ const Listing = () => {
             <p className='listing-para'>Find a class, school, playground, auditorium, studio, shop or an event venue.  Book a slot at venues that allow booking through hobbycue.</p>
           </div>
           </div>
-          <div style={{display: 'flex', justifyContent: 'space-evenly', marginTop: '1rem'}}>
+          <div className='list-resp' style={{marginTop: '1rem'}}>
           <div className='product-listing' onMouseOver={()=>setProductHovered(true)} onMouseLeave={()=>setProductHovered(false)}>
           <div style={{display: 'flex', alignItems: 'center', gap: '1rem'}}>
           <img src={productHovered ? producthover : Product} alt="" style={{marginLeft: '1rem', marginTop: '1rem'}}/>
@@ -53,6 +62,9 @@ const Listing = () => {
             <p className='listing-para'>Find events, meetups and workshops related to your hobby.  Register or buy tickets online.</p>
           </div>
           </div>
+        </div>
+        <div style={{width: '100%'}}>
+        <button className='go-to-top' onClick={scrollToTop}><img src={top} alt="" /></button>
         </div>
     </>
   )

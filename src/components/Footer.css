@@ -84,7 +84,7 @@
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     background: linear-gradient(0deg, #F8F9FA, #F8F9FA),linear-gradient(0deg, #EBEDF0, #EBEDF0);
-    border: 1px solid rgba(235, 237, 240, 1);
+    border: 1px solid rgba(128, 100, 162, 1);
 }
 
 .invite-search {
