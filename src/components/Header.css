@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    height: 5rem;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.08);
+}
+
+.header-content {
+    margin-left: 7rem;
+    margin-top: 0.5rem;
+}
+
+.header-input {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    width: 15.25rem;
+    display: inline-block;
+    padding-left: 1rem;
+    height: 2.5rem;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background: linear-gradient(0deg, #F8F9FA, #F8F9FA),linear-gradient(0deg, #EBEDF0, #EBEDF0);
+    border: 1px solid rgba(235, 237, 240, 1);
+}
+
+.input-search {
+    margin-top: 1rem;
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.75rem;
+    background: rgba(128, 100, 162, 1);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: none;
+}
+
+.explore-icon, .hobbies-icon, .bookmark-icon, .cart-icon, .bell-icon {
+    height: 24px;
+    width: 24px;
+    margin-top: 0.6rem;
+}
+
+.bookmark-icon, .cart-icon, .bell-icon, .hobbies-icon, .sign-in-btn {
+    margin-left: 1.5rem;
+}
+
+.header-left {
+    width: 32.8125rem;
+    height: 2.5rem;
+    margin-top: 1.1rem;
+    margin-left: 10rem;
+    display: flex;
+}
+
+.explore-dropdown, .hobbies-icon {
+    border: none;
+    font-weight: 600;
+}
+
+.sign-in-btn {
+    width: 7rem;
+    height: 2.5rem;
+    border: 1px solid rgba(128, 100, 162, 1);
+    border-radius: 8px;
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0em;
+    color: rgba(128, 100, 162, 1);
+}
+
+@media only screen and (max-width: 360px) {
+    .header-mobile {
+        width: 360px;
+        height: 38px;
+        background: white;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header {
+        height: 48px !important;
+    }
+
+    /* .header {
+        display: none;
+    } */
+
+    .header-content-mobile:not(.logo-responsive) {
+        margin: 0.5rem;
+        width: 156.4px;
+        height: 32px; 
+    }
+
+    .sign-in-btn, .explore-icon, .bookmark-icon, .cart-icon, .hobbies-icon, select, .header-input, .input-search, .bell-icon, .header-content, .header-left {
+        display: none;
+    }
+
+    .mobile-menu {
+      float: right;
+      margin: 10px;
+    }
+
+    .search-mobile, .bell-mobile {
+        display: block;
+        margin: auto;
+        height: 24px;
+        width: 24px;
+    }
+  }
+
+  @media only screen and (max-width: 720px) {
+
+    .header {
+        height: 68px;
+    }
+
+    .header-content:not(.logo-responsive) {
+        margin: 0.8rem;
+        width: 150px;
+        height: 40px;
+        margin-right: 0 !important;
+    }
+
+    .header-input, .input-search {
+        display: none;
+    }
+
+    .explore-icon, .hobbies-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .bell-icon, .cart-icon, .bookmark-icon {
+        display: none;
+    }
+
+    .sign-in-btn {
+        width: 5rem;
+        font-size: 12px;
+    }
+
+    .header-left {
+        margin-left: 2rem;
+    }
+
+    .explore-dropdown {
+        margin: 0;
+        font-size: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 720px) {
+
+    .header {
+        height: 68px;
+    }
+
+    .header-content:not(.logo-responsive) {
+        margin: 0.8rem;
+        width: 150px;
+        height: 40px;
+        margin-right: 0 !important;
+    }
+
+    .header-input, .input-search {
+        display: none;
+    }
+
+    .explore-icon, .hobbies-icon, .bell-icon, .cart-icon, .bookmark-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .sign-in-btn {
+        width: 5rem;
+        font-size: 12px;
+    }
+
+    .explore-dropdown {
+        margin: 0;
+        font-size: 10px;
+    }
+  }
+
+
+  @media only screen and (max-width: 1020px) {
+
+    .header {
+        height: 78px;
+    }
+
+    .header-content:not(.logo-responsive) {
+        margin: 0.8rem;
+        margin-right: 0 !important;
+    }
+
+    .header-input, .input-search {
+        display: none;
+    }
+
+  }
+
+  @media only screen and (max-width: 1200px) {
+
+    .header {
+        height: 78px;
+    }
+
+    .header-content:not(.logo-responsive) {
+        margin: 0.8rem;
+        margin-right: 0 !important;
+    }
+
+    .header-input, .input-search {
+        display: none;
+    }
+
+    .header-left {
+        margin-left: 20rem;
+    }
+
+  }
+
+  
+  

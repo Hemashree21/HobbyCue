@@ -1,0 +1,84 @@
+.listings {
+    display: block;
+    margin: auto;
+    width: 52.5rem;
+    height: 33.875rem;
+    background-color: white;
+}
+
+.people-listing, .place-listing, .product-listing, .program-listing {
+    width: 22.5rem;
+    height: 10.9375rem;
+    border: 1px solid rgba(206, 212, 218, 1);
+    border-radius: 8px;
+    margin-bottom: 21px;
+}
+
+.people-listing {
+    border: 2px solid rgba(128, 100, 162, 1);
+}
+
+.people-listing:hover {
+    background: rgba(128, 100, 162, 1);
+    color: white;
+}
+
+.place-listing {
+    border: 2px solid rgba(119, 147, 60, 1);
+}
+
+.place-listing:hover {
+    background: rgba(119, 147, 60, 1);
+    color: white;
+}
+
+.product-listing {
+    border: 2px solid rgba(192, 80, 77, 1);
+}
+
+.product-listing:hover {
+    background: rgba(192, 80, 77, 1);
+    color: white;
+}
+
+.program-listing {
+    border: 2px solid rgba(0, 150, 200, 1);
+}
+
+.program-listing:hover {
+    background: rgba(0, 150, 200, 1);
+    color: white;
+}
+
+.listing-para {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.listing-text {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.add-listing {
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0em;
+    margin: 2rem;
+    padding-top: 2rem;
+}
